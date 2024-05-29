@@ -79,7 +79,7 @@ function FormCategoria() {
     console.log(JSON.stringify(categoria))
 
     return (
-        <div className="container flex flex-col items-center justify-center mx-auto">
+        <div className="container flex flex-col items-center justify-center mx-auto py-40 bg-slate-200">
             <h1 className="text-4xl text-center my-8 text-slate-700">
                 {id === undefined ? 'Cadastrar Categoria' : 'Editar Categoria'}
             </h1>
@@ -93,13 +93,13 @@ function FormCategoria() {
                         type="text"
                         placeholder="Digite sua categoria"
                         name='nome'
-                        className="border-2 border-slate-700  text-slate-800 rounded-br-2xl"
+                        className="border-2 border-slate-700 rounded-br-2xl h-12"
                         value={categoria.nome}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                     />
                 </div>
                 <button
-                    className="rounded text-slate-100 text-lg font-bold bg-cyan-600 hover:bg-cyan-700 w-1/2 py-2 mx-auto flex justify-center"
+                    className="rounded-lg text-slate-100 text-lg font-bold bg-cyan-600 hover:bg-cyan-700 w-1/2 py-2 mx-auto"
                     type="submit"> 
 
                     {isLoading ? <RotatingLines

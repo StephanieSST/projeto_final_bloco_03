@@ -7,7 +7,7 @@ interface CardCategoriasProps {
 
 function CardCategorias({ categoria }: CardCategoriasProps) {
     return (
-        <div className='border flex flex-col rounded-l overflow-hidden justify-between'>
+        <div className='border flex flex-col rounded-lg overflow-hidden justify-between'>
             <header className='py-2 px-6 bg-cyan-600 text-slate-100 font-bold text-2xl'>
                 Categoria
             </header>
@@ -22,7 +22,7 @@ function CardCategorias({ categoria }: CardCategoriasProps) {
 
                 <Link to={`/deletarCategoria/${categoria.id}`}
                     className='text-slate-100 bg-red-700 hover:bg-red-800 w-full 
-		                        flex items-center justify-center'>
+		                        flex items-center justify-center '>
                     <button>Deletar</button>
                 </Link>
             </div>

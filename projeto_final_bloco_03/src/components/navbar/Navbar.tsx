@@ -23,9 +23,9 @@ function Navbar() {
           </button>
         </div>
 
-            <div className='flex gap-5 font-bold text-lg items-center'>
-            <Link to='/categorias' className='hover:underline pe-8'>Categorias</Link>
-            <Link to='/cadastrarcategoria' className='hover:underline pe-8'>Cadastrar Categoria</Link>
+            <div className='flex gap-5 font-bold text-lg items-center hover:text-slate-200'>
+            <Link to='/categorias' className='pe-8'>Categorias</Link>
+            <Link to='/cadastrarcategoria' className='pe-8'>Cadastrar Categoria</Link>
             <Link to={"/carrinho"} className="flex items-center justify-center gap-7 pe-5"
           > <UsersRound className="z-10 size-7"/>
             <ShoppingCart className="z-10 size-7" />
